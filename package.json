@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"lint": "eslint . --ext .ts",
-		"test": "echo \"Error: no test specified\" && exit 1",
+  		"test": "jest",
 		"build": "gulp cleanDest && tsc && gulp",
 		"start": "npm run build && concurrently --hide 2  \"gulp setWatchers\" \"tsc -w\" \"http-server  -c-1 ./prod -o . \""
 	},
